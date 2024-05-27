@@ -1,0 +1,202 @@
+Universal selector - *
+Selectors - ID, Tags, Class // Elements
+
+let, const, var
+user var for global variable.
+
+CSS
+- Inline
+- Internal
+- External
+
+Descendant Combinator Selector
+- To get specific element/tags
+- div inside div 
+- #div1 .div2{
+	styles: css;
+}
+
+Nested loop
+
+if> if> else
+
+if without else.
+
+switch-case statement. switch(expression):
+
+let trafficLight = "red"; // case = red;
+let message = ""
+ 
+switch (trafficLight) {
+    case "red":
+        message = "Stop immediately.";
+        break;
+    case "yellow":
+        message = "Prepare to stop.";
+        break;
+    case "green":
+        message = "Proceed or continue driving.";
+        break;
+    default:
+        message = "Invalid traffic light color.";
+}
+ 
+console.log(message)
+
+
+Get current date with UTC+8
+
+// Adjusting the script to match the Philippine timezone
+function getCurrentDayOfWeek() {
+
+  // Creating a new date object with an offset to match the Philippine timezone (UTC+8)
+  const philippinesDate = new Date(new Date().getTime() + (8 * 60 * 60 * 1000));
+  let dayOfWeek = "";
+
+  switch (philippinesDate.getDay()) {
+    case 0:
+      dayOfWeek = "Sunday";
+      break;
+    case 1:
+      dayOfWeek = "Monday";
+      break;
+    case 2:
+      dayOfWeek = "Tuesday";
+      break;
+    case 3:
+      dayOfWeek = "Wednesday";
+      break;
+    case 4:
+      dayOfWeek = "Thursday";
+      break;
+    case 5:
+      dayOfWeek = "Friday";
+      break;
+    case 6:
+      dayOfWeek = "Saturday";
+      break;
+  }
+
+  return dayOfWeek;
+}
+
+const currentDay = getCurrentDayOfWeek();
+console.log("Today is " + currentDay);
+
+
+//////
+
+const today = new Date();
+const year = today.getFullYear();
+const month = today.getMonth() + 1; // Note: Months are zero-indexed, so we add 1 to get the correct month number
+const day = today.getDate();
+
+console.log("Today's date is: " + year + "-" + month + "-" + day);
+
+
+//
+
+My modified to get ph time UTC+8
+
+const today = new Date(new Date().getTime() + (8 * 60 * 60 * 1000));
+const year = today.getFullYear();
+const month = today.getMonth() + 1;
+const day = today.getDate();
+
+console.log("Today's date is: " + year + "-" + month + "-" + day);
+
+// I added this line (new Date().getTime() + (8 * 60 * 60 * 1000)); in const new Date()
+
+// for loop:
+//i<11 to count from 0 to 10
+
+for ( =0; i<11; i++)
+console.log(i);
+
+
+// ex.
+
+instead of:
+text += cars[0] + "<br>";
+text += cars[1] + "<br>";
+text += cars[2] + "<br>";
+text += cars[3] + "<br>";
+text += cars[4] + "<br>";
+text += cars[5] + "<br>";
+
+
+write for loop:
+for (let i = 0; i < cars.length; i++) { //Line inside parathesis is called expression
+  text += cars[i] + "<br>";
+}
+
+Output = "(text) + cars.length"
+
+
+// To access elements use for of/forEach
+// if item number(index) from 0++ use for in.
+
+var a = [1, 2, 3, 4];
+
+a.forEach(item => console.log(item));
+
+for (var item of a)
+console.log(item);
+
+// while for in is:
+
+for (var item in a)
+console.log(item);
+
+
+//while loop: while(expression):
+
+var i=0;
+while(i<5;){
+  console.log('current value of i is:' + i);
+  i++;
+}
+
+// do while loop:
+// ex.
+var text = document.querySelector('id').value
+or
+let text = "";
+let i = 0;
+do {
+  text += i + "<br>";
+  i++;
+}
+while (i < 5);
+
+/////
+
+var i = 0;
+do{
+  console.log('current value of i is:' + i);
+  i++;
+}
+while(i<5);
+
+
+// operators in javascript: check is something are greater than x.
+
+1. Unary - Increment and Decrement
+
+postfix: first assign then Increment:
+var a = 2;
+a++; (if decremment --)
+2 (2 if decremment)
+
+prefix: first increment then assign:
+var a = 2;
+++a; (-- if decrement)
+3 (1 if decrement)
+
+2. Arithmetic
+3. Shift
+4. Relational
+5. Bitwise
+6. Logical
+7. Assignment
+8. Ternary
