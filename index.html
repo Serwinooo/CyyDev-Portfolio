@@ -165,9 +165,21 @@
     <aside>
 
       <h1 name="contact" class="contact" id="contact">Contact Me</h1>
-      <input type="email" name="" id="" placeholder="example@gmail.com">
-      <input type="text" name="" id="">
-      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="email" id="email" placeholder="example@gmail.com" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="fullName" placeholder="Full Name" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder="Subject" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <textarea id="content" cols="30" rows="10" placeholder="Send me an email..." required></textarea>
+        </div>
+        <button type="submit" id="send">Send</button>
+      </form>
 
     </aside>
 

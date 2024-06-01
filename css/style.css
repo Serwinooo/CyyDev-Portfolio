@@ -324,6 +324,48 @@ body {
   font-size: 1.5rem;
 }
 
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+#email,
+#subject,
+#fullName,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#send {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4a3a27;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send:hover {
+  background-color: #634c35;
+}
+
+
 .slider-container {
   display: none;
   position: fixed;
