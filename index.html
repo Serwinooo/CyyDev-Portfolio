@@ -42,13 +42,33 @@
   <div id="main-content">
     <h1 id="about" class="about">About Me</h1>
     <figure class="snip1577">
-      <img src="image/proj.png" alt="sample99" />
+      <img src="image/proj.png" alt="video thumbnail" />
       <figcaption>
-        <h3>Experiences</h3>
-        <h4>Projects Experience</h4>
+          <h3>Experiences</h3>
+          <h4>Projects Experience</h4>
       </figcaption>
-      <a href="#"></a>
-    </figure>
+      <a href="#" class="open-video-modal"></a>
+  </figure>
+
+<!-- The Video Modal -->
+<div id="videoModal" class="modalVid">
+  <div class="modal-content">
+      <span class="close-video-modal">&times;</span>
+      <div id="videoPlaylist">
+          <!-- Your video playlist goes here -->
+          <video controls>
+              <source src="vids/tiktok1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <video controls>
+              <source src="vids/tiktok2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <!-- Add more videos as needed -->
+      </div>
+  </div>
+</div>
+
     <figure class="snip1577">
       <img class="cert" src="image/cert.png" alt="sample109" />
       <figcaption>

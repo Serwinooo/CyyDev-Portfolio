@@ -52,6 +52,26 @@
             modal.style.display = "none";
         }
     }
+
+    // Video modal functionality
+    var openVideoModalBtn = document.querySelector('.open-video-modal');
+    var videoModal = document.getElementById("videoModal");
+    var closeVideoModalBtn = document.getElementsByClassName("close-video-modal")[0];
+
+    openVideoModalBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        videoModal.style.display = "block";
+    });
+
+    closeVideoModalBtn.onclick = function() {
+        videoModal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == videoModal) {
+            videoModal.style.display = "none";
+        }
+    }
 });
 
 // Slider functionality
