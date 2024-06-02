@@ -156,32 +156,33 @@
   </div>
 
 </main>
-  <section>
-    <div>
-      
-    </div>
-  </section>
 
-    <aside>
-      
-      <h1 name="contact" class="contact" id="contact">Contact Me</h1>
-      <form id="contactForm">
-        <div class="form-group">
+<aside>
+  <h1 name="contact" class="contact" id="contact">Contact Me</h1>
+  <form id="contactForm">
+      <div class="form-group">
           <input type="email" id="email" placeholder="example@gmail.com" autocomplete="off" required>
-        </div>
-        <div class="form-group">
+      </div>
+      <div class="form-group">
           <input type="text" id="fullName" placeholder="Full Name" autocomplete="off" required>
-        </div>
-        <div class="form-group">
+      </div>
+      <div class="form-group">
           <input type="text" id="subject" placeholder="Subject" autocomplete="off" required>
-        </div>
-        <div class="form-group">
+      </div>
+      <div class="form-group">
           <textarea id="content" cols="30" rows="10" placeholder="Send me a message..." required></textarea>
-        </div>
-        <button type="submit" id="send">Send</button>
-      </form>
+      </div>
+      <button type="submit" id="send">Send</button>
+  </form>
+</aside>
 
-    </aside>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalMessage"></p>
+  </div>
+</div>
 
     <footer>
       <div>
@@ -191,6 +192,7 @@
 </body>
 
 <script src="scripts/script.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   AOS.init();
 </script>
