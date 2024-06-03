@@ -9,6 +9,17 @@ video {
   overflow-x: hidden;
 }
 
+.projExp{
+  object-fit: contain;
+  width: 50vw;
+  height: 50vh;
+  top: 50px;
+  left: 0;
+  z-index: 999;
+  position: absolute;
+  overflow-x: hidden;
+}
+
 html, body {
   height: 100%;
   scroll-behavior: smooth;

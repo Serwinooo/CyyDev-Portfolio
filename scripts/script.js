@@ -61,6 +61,9 @@
     openVideoModalBtn.addEventListener('click', function(e) {
         e.preventDefault();
         videoModal.style.display = "block";
+        videoModal.style.zIndex = "999";
+        modalMessage.style.display = "none";
+        modal.style.display = "none";
     });
 
     closeVideoModalBtn.onclick = function() {
