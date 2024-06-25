@@ -116,3 +116,18 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block";
 }
+
+var socMed = document.querySelector('#socMed');
+var socs = document.querySelectorAll('.soc');
+
+function mySoc() {
+    socs.forEach(function(soc) {
+        if (soc.style.display == 'inline-block') {
+            soc.style.display = 'none';
+        } else {
+            soc.style.display = 'inline-block';
+        }
+    });
+}
+
+socMed.addEventListener('click', mySoc);

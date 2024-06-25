@@ -622,3 +622,12 @@ div.row{
     text-decoration: none;
     cursor: pointer;
 }
+
+/* FOOTER CSS */
+.soc {
+  display: none;
+}
+
+.mySocials>.soc{
+  display: none;
+}
