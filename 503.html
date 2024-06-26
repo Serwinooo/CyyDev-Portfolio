@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Unavailable</title>
+
+    <style>
+        body{
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+    
+        <div class="message">
+
+            <h1>This Feature is under Development</h1>
+            <p>Oops! Sorry, this feature is currently not available and still under the development.</p>
+
+        </div>
+
+        <div>
+            <a href="index.html">Go back</a>
+        </div>
+
+</body>
+
+<script>
+    const express = require('express');
+const app = express();
+
+// Route for the feature under development
+app.get('/feature', (req, res) => {
+    res.status(503).send('This feature is currently under development. Please check back later.');
+});
+
+// Other routes
+app.get('/', (req, res) => {
+    res.send('Welcome to the homepage!');
+});
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
+</script>
+
+</html>

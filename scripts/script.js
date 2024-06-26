@@ -120,14 +120,12 @@ function showDivs(n) {
 var socMed = document.querySelector('#socMed');
 var socs = document.querySelectorAll('.soc');
 
-function mySoc() {
+socMed.addEventListener('click', function() {
     socs.forEach(function(soc) {
-        if (soc.style.display == 'inline-block') {
-            soc.style.display = 'none';
-        } else {
+        if (soc.style.display === 'none' || soc.style.display === '') {
             soc.style.display = 'inline-block';
+        } else {
+            soc.style.display = 'none';
         }
     });
-}
-
-socMed.addEventListener('click', mySoc);
+});
