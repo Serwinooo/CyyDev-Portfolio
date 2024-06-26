@@ -122,10 +122,12 @@ var socs = document.querySelectorAll('.soc');
 
 socMed.addEventListener('click', function() {
     socs.forEach(function(soc) {
-        if (soc.style.display === 'none' || soc.style.display === '') {
+        if (soc.style.display === 'none' || soc.style.display === '' ) {
             soc.style.display = 'inline-block';
+            socMed.style.color = 'brown';
         } else {
             soc.style.display = 'none';
+            socMed.style.color = 'navy';
         }
     });
 });

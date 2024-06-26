@@ -629,18 +629,36 @@ div.row{
 }
 
 #socMed{
- background-color:#888;
- border-radius: 50%;
- width: 50%;
- height: 100%;
- display: flex;
+ margin-bottom: 20px;
  color: navy;
+ font-size: 60px;
+ cursor: pointer;
+ animation: shake 2s ease-in-out infinite; 
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-5px); }
+  20% { transform: translateX(5px); }
+  30% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  60% { transform: translateX(5px); }
+  70% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  90% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+#socMed:hover{
+  content: '';
+  color: rgb(67, 67, 133);
 }
 
 .mySocials {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 10px;
   z-index: 1000;
 }
 
@@ -649,8 +667,8 @@ div.row{
 }
 
 .mySocials i {
-  font-size: 24px;
-  color: #333;
+  font-size: 40px;
+  color: navy;
 }
 
 .mySocials i:hover {
