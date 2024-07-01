@@ -1,11 +1,4 @@
-/* $(".hover").mouseleave(
-    function() {
-      $(this).removeClass("hover");
-    }
-  );
-  */
-
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     emailjs.init("Zmorfzx6Mu5bRHaEt");
     
     var contactForm = document.getElementById('contactForm');
@@ -120,9 +113,10 @@ function showDivs(n) {
 var socMed = document.querySelector('#socMed');
 var socs = document.querySelectorAll('.soc');
 
-socMed.addEventListener('click', function() {
+socMed.addEventListener('click', function(event) {
+    event.stopPropagation(); // Stop the event from propagating
     socs.forEach(function(soc) {
-        if (soc.style.display === 'none' || soc.style.display === '' ) {
+        if (soc.style.display === 'none' || soc.style.display === '') {
             soc.style.display = 'inline-block';
             socMed.style.color = '#4a3a27';
         } else {
