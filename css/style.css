@@ -401,7 +401,7 @@ textarea {
 }
 
 #send {
-  width: 100%;
+  width: 20%;
   padding: 10px;
   font-size: 16px;
   background-color: #4a3a27;
@@ -412,7 +412,8 @@ textarea {
 }
 
 #send:hover {
-  background-color: #634c35;
+  background-color: #695b4c;
+  color: greenyellow;
 }
 
 
