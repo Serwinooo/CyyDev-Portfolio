@@ -630,7 +630,7 @@ div.row{
 
 #socMed{
  margin-bottom: 20px;
- color: navy;
+ color: #031D44;
  font-size: 60px;
  cursor: pointer;
  animation: shake 2s ease-in-out infinite; 
@@ -646,7 +646,7 @@ div.row{
 
 #socMed:hover{
   content: '';
-  color: rgb(67, 67, 133);
+  color: rgb(139, 139, 139);
 }
 
 .mySocials {
@@ -662,9 +662,30 @@ div.row{
 
 .mySocials i {
   font-size: 40px;
-  color: navy;
+  color:#031D44;
 }
 
 .mySocials i:hover {
-  color: #000;
+  color: #364253;
+}
+
+.resume {
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.res-del{
+  color: #031D44;
+  font-size: 24px;
+}
+
+.res-txt{
+  font-size: 18px;
+  color: #031D44;
+}
+
+.res-del:hover, .res-txt:hover{
+  color: #666;
 }

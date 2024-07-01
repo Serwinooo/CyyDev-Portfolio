@@ -124,10 +124,10 @@ socMed.addEventListener('click', function() {
     socs.forEach(function(soc) {
         if (soc.style.display === 'none' || soc.style.display === '' ) {
             soc.style.display = 'inline-block';
-            socMed.style.color = 'brown';
+            socMed.style.color = '#4a3a27';
         } else {
             soc.style.display = 'none';
-            socMed.style.color = 'navy';
+            socMed.style.color = '#031D44';
         }
     });
 });
