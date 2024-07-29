@@ -47,7 +47,7 @@
   }
   
   .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
   }
   
   #email,
@@ -57,8 +57,10 @@
     width: 30rem;
     padding: 10px;
     font-size: 16px;
+    background-color: #ffffffa4;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: black;
   }
   
   textarea {
@@ -82,3 +84,9 @@
     color: rgb(0, 0, 0);
   }
   
+  .contact-form{
+    background-color: #8888886c;
+    width: 100%;
+    padding-top: 2rem; padding-bottom: 0;
+    padding-left: 8rem; padding-right: 8rem;
+  }

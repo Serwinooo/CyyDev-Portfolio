@@ -1,9 +1,9 @@
 .about-container{
-	width: 90%;
+	width: 100%;
 	padding: 35px 2%;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
+  	justify-content: center;
+  	align-items: center;
+  	margin-left: 1rem;
 }
 
 div.row{
