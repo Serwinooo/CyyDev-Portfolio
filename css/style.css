@@ -280,4 +280,8 @@ a:hover{
   margin-top: 3rem;
   z-index: 0;
 }
+.main {
+  margin-right: 35rem;
+  margin-top: 20rem;
+}
 }

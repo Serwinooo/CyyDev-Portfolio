@@ -102,3 +102,35 @@
   label{
     font-weight:700;
   } 
+
+  @media (max-width: 480px) {
+    #contactForm {
+      max-width: 300px;
+      margin-right: 5rem;
+    }
+
+    #email,
+    #subject,
+    #fullName {
+      width: 24rem;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #ffffffa4;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: black;
+    }
+    
+    textarea {
+      resize: vertical;
+      width: 24rem;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #ffffffa4;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: black;
+      height: 200px;
+  
+    }
+ }
