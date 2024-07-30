@@ -237,3 +237,27 @@ a:hover{
   content: '';
   opacity: 0.7;
 }
+
+@media (max-width: 480px) {
+  .container--0-{
+  grid-template-columns: repeat(2, 1fr);
+  }
+  svg{
+    padding-right: 4.5rem;
+    padding-top: 10.5rem;
+    margin-left: -20px;
+  }
+  .avatar-container{
+    margin-right: 5.5rem;
+  }
+  .profile-name{
+    margin-right: 5rem;
+  }
+ .profile-info{
+  font-size: 12px;
+  margin-right: 4rem;
+ }
+ .resume{
+  margin-right: 5rem;
+ }
+}
