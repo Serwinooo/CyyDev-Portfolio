@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         modal2.style.display = "block";
         modalImg2.src = this.src;
         captionText2.innerHTML = 'Cyydev Cover Photo';
+        modal2.style.zIndex = '5';
     }
 
     span2.onclick = function() {

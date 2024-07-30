@@ -273,7 +273,7 @@ a:hover{
   margin-top: -19rem;
   background-color: rgba(158, 158, 158, 0.479);
   width: 100%;
-  z-index: 10;
+  z-index: 4;
   position: fixed;
 }
 .cover-photo{
