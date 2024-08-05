@@ -18,25 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         modal1.style.display = "none";
     }
 
-    // Modal logic for the second image
-    var modal2 = document.getElementById("myModal2");
-    var img2 = document.getElementById("myImg2");
-    var modalImg2 = document.getElementById("img02");
-    var captionText2 = document.getElementById("caption2");
-    var span2 = document.getElementsByClassName("close2")[0];
-
-    img2.onclick = function() {
-        modal2.style.display = "block";
-        modalImg2.src = this.src;
-        captionText2.innerHTML = 'Cyydev Cover Photo';
-        modal2.style.zIndex = '5';
-    }
-
-    span2.onclick = function() {
-        modal2.style.display = "none";
-    }
-
-    // Show the notification on load
     var notification = document.getElementById('notification');
     notification.style.display = 'block';
 
