@@ -98,6 +98,7 @@
     #contactForm, .contact-form{
       padding: 0;
       margin: 0;
+      background: none;
     }
 
   #email,
@@ -105,5 +106,9 @@
   #fullName,
   textarea   {
     width: 20rem;
+  }
+
+  label{
+    color: #b2b6b6;
   }
   }

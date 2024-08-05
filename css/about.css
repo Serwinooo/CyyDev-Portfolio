@@ -75,6 +75,12 @@
 	display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+	.about-container .abt{
+		color: #b2b6b6;
+	}
 
+	.box p{
+	color: #000;
+	}
 }

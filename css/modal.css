@@ -7,9 +7,9 @@ img:hover{
 }
 
 .modal-content {
-    margin: auto;
+    margin: 4rem auto;
     display: block;
-    width: 40%;
+    width: 30%;
   }
 
   #caption {
@@ -87,6 +87,11 @@ img:hover{
 
     br{
       display: none;
+    }
+
+    .modal-content{
+      width: 70%;
+      margin-top: 3rem;
     }
   }
   
