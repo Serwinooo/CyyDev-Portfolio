@@ -39,7 +39,7 @@
     width: 20%;
     padding: 10px;
     font-size: 16px;
-    background-color: #4a3a27;
+    background-color: rgb(30, 30, 60);
     color: white;
     border: none;
     border-radius: 5px;
@@ -50,10 +50,10 @@
   #send:hover {
     background-color: #ffffff94;
     color: rgb(0, 0, 0);
+    opacity: 60%;
   }
   
   .contact-form{
-    background-color: #8888886c;
     width: auto;
     padding-top: 2rem; padding-bottom: 0;
     padding-left: 8rem; padding-right: 8rem;

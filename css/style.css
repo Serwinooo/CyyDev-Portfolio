@@ -54,7 +54,7 @@
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(172, 170, 170, 0.7);
+    background-color: rgb(75, 75, 105);
     transition: 0.5s;
     padding-top: 20px;
   }
@@ -148,6 +148,7 @@
     left: 50%;
     width: 40em;
     margin: 0 0 0 -20em;
+    color: #000;
     
     span {
   
@@ -177,6 +178,26 @@
     }
   }
   
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
   /* Animate Background Image */
   
   @-webkit-keyframes aitf {
@@ -205,6 +226,7 @@
         left: 50%;
         width: 30em;
         margin: 0 0 0 -15em;
+        color: #b6b2b2;
         
         span {
           letter-spacing: 0;
