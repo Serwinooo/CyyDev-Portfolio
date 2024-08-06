@@ -18,10 +18,42 @@ document.addEventListener('DOMContentLoaded', function() {
         modal1.style.display = "none";
     }
 
+    var modalCert = document.getElementById("certModal");
+    var modalImgCert = document.getElementById("img-cert");
+    var captionTextCert = document.getElementById("caption-cert");
+    var spanCert = document.getElementsByClassName("close-cert")[0];
+
+    var images = document.querySelectorAll(".cert-image");
+    images.forEach(function(img) {
+        img.onclick = function() {
+            modalCert.style.display = "block";
+            modalImgCert.src = this.src;
+            modalImgCert.style.filter = "none";
+
+            if (this.id === "special-cert") {
+                modalImgCert.style.height = "90%";
+                modalImgCert.style.width = "50%";
+            } else {
+                modalImgCert.style.width = "90%";
+                modalImgCert.style.height = "70%";
+                modalImgCert.style.maxWidth = "900px";
+            }
+
+            captionTextCert.innerHTML = 'Cyydev Certificate';
+        }
+    });
+
+    spanCert.onclick = function() {
+        modalCert.style.display = "none";
+        modalImgCert.style.filter = "";
+        modalImgCert.style.width = "";
+        modalImgCert.style.maxWidth = "";
+        modalImgCert.style.height = "";
+    }
+
     var notification = document.getElementById('notification');
     notification.style.display = 'block';
 
-    // Handle the okay button click
     var okayButton = document.getElementById('okay-button');
     okayButton.addEventListener('click', function() {
         notification.style.display = 'none';
