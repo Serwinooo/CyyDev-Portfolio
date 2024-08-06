@@ -111,4 +111,9 @@
   label{
     color: #b2b6b6;
   }
+
+  #send{
+    background-color: #b2b6b6;
+    color: black;
+  }
   }
