@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalImgCert.style.width = "90%";
                 modalImgCert.style.height = "70%";
                 modalImgCert.style.maxWidth = "900px";
+                modalImgCert.style.transform = "scale(1)";
             }
 
             captionTextCert.innerHTML = 'Cyydev Certificate';

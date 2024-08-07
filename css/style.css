@@ -130,6 +130,10 @@
     margin-top: 15px;
   }
 
+  .about-section a{
+    color: #000;
+  }
+
   p{
     margin: 5px 0;
     color: #000;
