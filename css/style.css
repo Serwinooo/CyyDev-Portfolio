@@ -44,6 +44,11 @@
     height: auto;
   }
 
+  .col-sm-8{
+    justify-content: center;
+    align-items: center;
+  }
+
   .card{
     position: relative;
     width: 100%;
@@ -215,7 +220,6 @@
         align-items: flex-start;
         display: flex;
         margin-right: 0;
-        margin-top: 0;
       }
       .intro{
         text-align: center;
