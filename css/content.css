@@ -49,6 +49,10 @@
     top: 0;
     animation: slide 5s infinite;  
   }
+
+  iframe{
+margin-top: 1.5rem;
+  }
   
   @keyframes slide {
     0%{

@@ -8,7 +8,7 @@
   html, body {
     height: 100%;
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
   }
   
@@ -38,6 +38,10 @@
     display: flex;
     margin-right: 10rem;
     margin-top: 1rem;
+  }
+
+  main .container{
+    display: grid;
   }
 
   .col-sm-4 .card{
