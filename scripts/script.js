@@ -29,15 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
             modalCert.style.display = "block";
             modalImgCert.src = this.src;
             modalImgCert.style.filter = "none";
+            spanCert.style.zIndex = '4';
+            modalImgCert.style.transform = "scale(1)";
 
             if (this.id === "special-cert") {
-                modalImgCert.style.height = "90%";
-                modalImgCert.style.width = "50%";
+                modalImgCert.style.height = "80%";
+                modalImgCert.style.width = "90%";
             } else {
                 modalImgCert.style.width = "90%";
                 modalImgCert.style.height = "70%";
                 modalImgCert.style.maxWidth = "900px";
-                modalImgCert.style.transform = "scale(1)";
+               
             }
 
             captionTextCert.innerHTML = 'Cyydev Certificate';
