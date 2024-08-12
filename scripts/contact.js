@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             from_name: fullName,
             from_email: email,
             subject: subject,
-            message: content
+            message: content,
         };
 
         emailjs.send('service_u5lk3vw', 'template_2e7fh6l', templateParams)
