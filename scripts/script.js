@@ -63,8 +63,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
-  document.nav.classList.toggle("dark")
-})
+const checkbox = document.getElementById("checkbox");
+const navbarLinks = document.querySelectorAll('.navbar-nav a');
+const cards = document.querySelectorAll('.card');
+
+function changeMode() {
+    if (checkbox.checked) {
+        for (let i = 0; i < navbarLinks.length; i++) {
+            navbarLinks[i].style.color = 'black';
+        }
+
+        document.body.classList.add('dark');
+    
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].style.backgroundColor = '#cfcfcf';
+        }
+    } else {
+        for (let i = 0; i < navbarLinks.length; i++) {
+            navbarLinks[i].style.color = '';
+        }
+
+        document.body.classList.remove('dark');
+
+        for (let i = 0; i < cards.length; i++) {
+            cards[i].style.backgroundColor = '';
+        }
+    }
+}
+
+checkbox.addEventListener('change', changeMode);
+

@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+.lightMode {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -37,10 +44,8 @@
   transform: translateX(24px);
 }
 
-body.dark {background-color: #d1d1d1;} /* #9b59b6 */
+body.dark {background-color: rgb(207, 207, 207);} /* #9b59b6 */
 nav.dark{color: #000;}
-body.dark h1, body.dark .support a {color: #fff;}
-
 
 * {
     margin: 0;
@@ -296,8 +301,16 @@ body.dark h1, body.dark .support a {color: #fff;}
     background: none;
     border: none;
     box-shadow: none;
+    background-color: none;
+  }
+  div #content-pages .card{
+    background-color: none;
+    background: none;
   }
   .card-header{
     color: #b6b2b2;
+  }
+  .navbar-toggler-icon{
+    color: black;
   }
 }
