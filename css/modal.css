@@ -127,7 +127,12 @@ img:hover{
   cursor: pointer;
 }
 
-
+p img{
+  width: 45%;
+  height: 180px;
+  float: left;
+  margin: 5px 15px;
+}
   
   @media only screen and (max-width: 700px){
     .modal-content {
