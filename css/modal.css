@@ -133,6 +133,10 @@ p img{
   float: left;
   margin: 5px 15px;
 }
+
+.madeBy{
+  color: rgb(219, 170, 106);
+}
   
   @media only screen and (max-width: 700px){
     .modal-content {
