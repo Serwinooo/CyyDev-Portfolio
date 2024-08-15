@@ -82,6 +82,7 @@ function changeMode() {
         }
 
         intro.style.color = '#000';
+        intro.style.borderColor = '#000';
         cardHeader.style.color = '#000';
 
     } else {
@@ -96,6 +97,7 @@ function changeMode() {
         }
 
         intro.style.color = '';
+        intro.style.borderColor = '';
         cardHeader.style.color = '';
     }
 }
