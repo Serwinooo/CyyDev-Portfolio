@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
 const checkbox = document.getElementById("checkbox");
 const navbarLinks = document.querySelectorAll('.navbar-nav a');
 const cards = document.querySelectorAll('.card');
+const intro = document.querySelector('.intro');
+const cardHeader = document.querySelector('.card-header');
 
 function changeMode() {
     if (checkbox.checked) {
@@ -78,6 +80,10 @@ function changeMode() {
         for (let i = 0; i < cards.length; i++) {
             cards[i].style.backgroundColor = '#cfcfcf';
         }
+
+        intro.style.color = '#000';
+        cardHeader.style.color = '#000';
+
     } else {
         for (let i = 0; i < navbarLinks.length; i++) {
             navbarLinks[i].style.color = '';
@@ -88,6 +94,9 @@ function changeMode() {
         for (let i = 0; i < cards.length; i++) {
             cards[i].style.backgroundColor = '';
         }
+
+        intro.style.color = '';
+        cardHeader.style.color = '';
     }
 }
 

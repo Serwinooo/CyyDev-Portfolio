@@ -45,7 +45,10 @@
 }
 
 body.dark {background-color: rgb(207, 207, 207);} /* #9b59b6 */
-nav.dark{color: #000;}
+
+nav span, nav button{
+  color: #000;
+}
 
 * {
     margin: 0;
