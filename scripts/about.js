@@ -10,7 +10,7 @@ const contact = document.querySelector('#content-contact');
 const contentCertificates = document.querySelector('#content-certificates');
 const contentProjects = document.querySelector('#content-projects');
 const divProfile = document.querySelector('#content-profile');
-const contentPages = document.querySelector('#content-pages');
+const contentPages = document.querySelector('.col-sm-8 #content-pages');
 
 function aboutme(){
     contentTitle.innerHTML = 'About Me';
@@ -26,6 +26,7 @@ function aboutme(){
 aboutPage.addEventListener('click', aboutme);
 
 function homepage(){
+    
     contentTitle.innerHTML = 'Welcome to CyyDev Portfolio!';
     contentHome.style.display = 'block';
     divProfile.style.display = 'block';
@@ -34,6 +35,7 @@ function homepage(){
     contact.style.display = 'none';
     contentCertificates.style.display = 'none';
     contentProjects.style.display = 'none';
+
 }
 
 homePage.addEventListener('click', homepage);

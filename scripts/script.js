@@ -65,32 +65,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const checkbox = document.getElementById("checkbox");
 const navbarLinks = document.querySelectorAll('.navbar-nav a');
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelector('.card');
 const intro = document.querySelector('.intro');
 const cardHeader = document.querySelector('.card-header');
+// const contentPage = document.querySelector('.content-pages');
+const pfName = document.querySelectorAll('.span-name');
+const aboutSection = document.querySelector('#about-details');
+
 
 function changeMode() {
     if (checkbox.checked) {
         for (let i = 0; i < navbarLinks.length; i++) {
-            navbarLinks[i].style.color = 'black';
+            navbarLinks[i].style.color = '#000';
         }
 
-        document.body.classList.add('dark');
+        for (let i = 0; i < pfName.length; i++) {
+            pfName[i].style.color = '#000';
+        }
     
         for (let i = 0; i < cards.length; i++) {
-            cards[i].style.backgroundColor = '#cfcfcf';
+            cards[i].style.backgroundColor = '#fff';
         }
 
         intro.style.color = '#000';
         intro.style.borderColor = '#000';
         cardHeader.style.color = '#000';
+        document.body.classList.add('dark');
+        // contentPage.style.backgroundColor = '#000';
+        // contentPage.style.color = 'black';
+        aboutSection.style.color = '#000';
 
     } else {
         for (let i = 0; i < navbarLinks.length; i++) {
             navbarLinks[i].style.color = '';
         }
 
+        for (let i = 0; i < pfName.length; i++) {
+            pfName[i].style.color = '';
+        }
+
+        for (let i = 0; i < navbarLinks.length; i++) {
+            navbarLinks[i].style.color = '';
+        }
+
         document.body.classList.remove('dark');
+        aboutSection.style.color = '';
 
         for (let i = 0; i < cards.length; i++) {
             cards[i].style.backgroundColor = '';
@@ -99,6 +118,8 @@ function changeMode() {
         intro.style.color = '';
         intro.style.borderColor = '';
         cardHeader.style.color = '';
+        document.body.classList.remove('dark');
+        aboutSection.style.color = '';
     }
 }
 

@@ -65,7 +65,7 @@ nav span, nav button{
   }
   
   body {
-    background-color: rgb(30, 30, 60);
+    background-color: #000;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -119,7 +119,7 @@ nav span, nav button{
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(75, 75, 105);
+    background-color: rgba(70, 70, 70, 0.5);
     transition: 0.5s;
     padding-top: 20px;
   }
@@ -168,7 +168,7 @@ nav span, nav button{
   .name{
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: #b6b2b2;
   }
 
   .name i{
@@ -178,13 +178,17 @@ nav span, nav button{
 
   .description{
     font-size: 14px;
-    color: #000;
+    color: #fff;
     text-align: center;
+  }
+
+  strong{
+    color: #fff;
   }
 
   .subtitle{
     font-size: 16px;
-    color: #000;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -196,12 +200,18 @@ nav span, nav button{
   }
 
   .about-section a{
-    color: #000;
+    color: #b6b2b2;
   }
 
   p{
     margin: 5px 0;
-    color: #000;
+    color: #b6b2b2;
+  }
+
+  .card-header{
+    color: #b6b2b2;
+    background: none;
+    border: none;
   }
 
   .intro{
@@ -217,7 +227,7 @@ nav span, nav button{
     left: 50%;
     width: 40em;
     margin: 0 0 0 -20em;
-    color: #000;
+    color: #fff;
     
     span {
   
@@ -282,14 +292,7 @@ nav span, nav button{
         margin-right: 0;
       }
       .intro{
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: .5em;
-        display: inline-block;
-        border: 4px double rgba(255,255,255,.25);
-        border-width: 4px 0;
-        padding: 1.5em 0em;
-        position: absolute;
+        border: none;
         top: 40%;
         left: 50%;
         width: 30em;
@@ -298,7 +301,12 @@ nav span, nav button{
         
         span {
           letter-spacing: 0;
+          text-shadow: none;
+          font: 800 4em/1 "Oswald", sans-serif;
+        
+          
     }
+
   }
   .col-sm-8 .card{
     background: none;
@@ -306,10 +314,7 @@ nav span, nav button{
     box-shadow: none;
     background-color: none;
   }
-  div #content-pages .card{
-    background-color: none;
-    background: none;
-  }
+
   .card-header{
     color: #b6b2b2;
   }
