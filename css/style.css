@@ -23,7 +23,6 @@ header {
     border-bottom: 2px solid #000;
 }
 
-
 nav {
     width: 100%;
     display: flex;
@@ -93,7 +92,6 @@ nav span, nav button {
     border-radius: 5px;
 }
 
-
 /* Flexbox layout for the parent div */
 .parent {
     display: flex;
@@ -102,7 +100,7 @@ nav span, nav button {
     gap: 2rem; /* Add space between the cards */
     margin-top: 100px; /* Add margin to push content below the fixed header */
     padding: 20px;
-    height: 80vh; /* Ensure that the parent container takes up most of the viewport height */
+    min-height: 80vh; /* Allow the parent container to grow if necessary */
 }
 
 /* Card Section */
@@ -117,11 +115,38 @@ nav span, nav button {
 .div1 {
     flex: 1; /* The left card takes 1 part of the available space */
     max-width: 300px; /* Adjust the maximum width of the profile card */
+    animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
 }
 
 .div2 {
     flex: 2; /* The right card takes 2 parts of the available space, making it wider */
+    animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
 }
+
+.animate {
+    animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 /* Ensure both cards have equal height */
 .card {
@@ -135,4 +160,23 @@ nav span, nav button {
 
 .card-content, .card-body {
     flex-grow: 1; /* Ensures content grows to fill the card */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .parent {
+        flex-direction: column;
+        align-items: stretch; /* Ensure the children take up the full width */
+        height: auto; /* Allow the parent to grow based on its content */
+    }
+
+    .div1, .div2 {
+        width: 100%; /* Make both divs take up the full width */
+        max-width: none; /* Reset any max-width if applied */
+        margin-bottom: 20px; /* Add some space between the divs */
+    }
+
+    .div2 {
+        margin-bottom: 0; /* Remove bottom margin from last div */
+    }
 }
