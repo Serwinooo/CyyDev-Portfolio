@@ -11,6 +11,7 @@ const cardContent = document.querySelector('.card-content');
 const projectItem = document.querySelectorAll('.project-item');
 const projectPar = document.querySelectorAll('.project-item p');
 const labelForm = document.querySelectorAll('#label-form');
+const projContP =  document.querySelectorAll('.project-content p');
 
 function changeMode() {
     if (checkbox.checked) {
@@ -45,6 +46,10 @@ function changeMode() {
 
         for (let i = 0; i < labelForm.length; i++) {
             labelForm[i].style.color = '#000';
+        }
+
+        for (let i = 0; i < projContP.length; i++) {
+            projContP[i].style.color = '#000';
         }
 
         intro.style.color = '#fff';
@@ -85,6 +90,10 @@ function changeMode() {
 
         for (let i = 0; i < labelForm.length; i++) {
             labelForm[i].style.color = '';
+        }
+
+        for (let i = 0; i < projContP.length; i++) {
+            projContP[i].style.color = '';
         }
 
 
