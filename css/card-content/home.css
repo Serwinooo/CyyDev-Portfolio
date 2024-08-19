@@ -1,0 +1,52 @@
+.card-header {
+    background-color: #111;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* Ensure the card body fills the entire card */
+}
+
+.intro-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    font-size: 1.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-align: center;
+}
+
+.intro span {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.intro::before {
+    content: ">";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.intro span {
+    margin-top: 0.5rem;
+}
+
+#Home {
+    background-color: #111;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,303 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link class="web-icon" rel="icon" type="image/x-icon" href="/image/cyydev-icon.png">
-  <title></title>
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="web-icon" rel="icon" type="image/x-icon" href="/image/cyydev-icon.png">
+    <title>CyyDev Portfolio</title>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/container-css/content.css">
-  <link rel="stylesheet" href="css/container-css/contact.css">
-  <link rel="stylesheet" href="css/container-css/about.css">
-  <link rel="stylesheet" href="css/container-css/certification.css">
-  <link rel="stylesheet" href="css/container-css/projects.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/card-content/home.css">
+    <link rel="stylesheet" href="css/card-content/profile.css">
+    <link rel="stylesheet" href="css/card-content/about.css">
+    <link rel="stylesheet" href="css/card-content/contact.css">
+    <link rel="stylesheet" href="css/card-content/certificates.css">
+    <link rel="stylesheet" href="css/card-content/project.css">
+
 </head>
-<body class="light-mode">
-  <header>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <div class="lightMode">
-              <input type="checkbox" class="checkbox" id="checkbox">
-              <label for="checkbox" class="checkbox-label">
-                <i class="bi bi-sun"></i>
-                <i class="bi bi-moon"></i>
-                <span class="ball"></span>
-              </label>
-            </div>
-            <a class="cyylink nav-link" id="home-page" href="#Home">Home</a>
-            <a class="cyylink nav-link" id="about-page" href="#About">About</a>
-            <a class="cyylink nav-link" id="contact-page" href="#Contact">Contact</a>
-            <a class="cyylink nav-link" id="certificates-page" href="#Certificates">Certificates</a>
-            <a class="cyylink nav-link" id="projects-page" href="#Projects">Projects</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4" id="content-profile">
-          <div class="card">
-            <img src="image/avatar.jpeg" alt="cerwin-pfp" id="myImg">
-            <span class="name span-name">Cerwin Roxas<i class="bi bi-check-circle-fill"></i></span>
-            <span class="description span-name">Web Dev | BSCPE</span>
-            <div class="soc-icons">
-              <a href="https://www.tiktok.com/@cyyydev" class="soc-icon"><i class="bi bi-tiktok"></i></a>
-              <a href="https://github.com/Serwinooo" class="soc-icon"><i class="bi bi-github"></i></a>
-              <a href="https://x.com/itsmecerwin" class="soc-icon"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.instagram.com/crwnrxs/" class="soc-icon"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/cerwin-roxas-67b436250/" class="soc-icon">
-                <i class="bi bi-linkedin"></i></a>
-            </div>  
-            <div class="about-section">
-                <span class="subtitle span-name"><i class="bi bi-envelope-fill"></i> 
-                  <a href="mailto:cerwinroxas17@gmal.com" class="span-name">cerwinroxas17@gmail.com</a></span>
-                <p id="about-details">
-                  Graduate of<strong class="span-name"> Bachelor of Science in Computer Engineering.</strong>
-                  Service crew member for 6 months and
-                  Freelancer of <strong class="span-name">Excel Macro VBA</strong> and <strong class="span-name">WebDev</strong> 
-                    including Database using MySQL.
-                </p>
-            </div>
-          </div>
-          
-          <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-          </div>
-
-        </div>
-        <div class="col-sm-8">
-          <div class="card" id="content-pages">
-
-            <div class="card-header" id="content-title">
-              Welcome to CyyDev Portfolio!
-            </div>
-            <div class="card-body" id="content-home">
-              <div class="main" id="Home">
-                <!-- <h1>Hello! I'm Cerwin, 
-                  <div class="roller">
-                    <span id="rolltext">VHDL & Web<br/>
-                    Developer<br/>
-                    Tech. Support<br/>
-                    <span id="spare-time">Cyydev</span><br/>
-                    </span>
-                  </div>
-                </h1> -->
-                <div>
-                <p class="intro">
-                  console.log('Hello, I'm Cerwin');
-                  <span>
-                    VHDL & WEB DEVELOPER <br> TECH. SUPPORT
-                  </span>
-                  &mdash; Bachelor of Science in Computer Engineering &mdash;
-                </p>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <a class="navbar-brand all-span" href="#">CyyDev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-page" onclick="homePage()" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="about-page" onclick="aboutPage()" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-page" onclick="contactPage()" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="certificates-page" onclick="certPage()" href="#Certificates">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="projects-page" onclick="projectPage()" href="#Projects">Projects</a>
+                        </li>
+                    </ul>
+                    <div class="lightMode">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <i class="bi bi-sun"></i>
+                            <i class="bi bi-moon"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
                 </div>
-              </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="parent">
+        <div class="div1">
+            <div class="card">
+                <img src="image/avatar.jpeg" alt="Cerwin Roxas" class="card-img">
+                <div class="card-content">
+                    <span class="name all-span">Cerwin Roxas <i class="bi bi-check-circle-fill"></i></span> <br>
+                    <span class="description all-span">Web Dev | BSCPE</span>
+                    <div class="soc-icons">
+                        <a href="https://www.tiktok.com/@cyyydev" target="_blank" class="soc-icon"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://github.com/Serwinooo" target="_blank" class="soc-icon"><i class="bi bi-github"></i></a>
+                        <a href="https://x.com/itsmecerwin" target="_blank" class="soc-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/crwnrxs/" target="_blank" class="soc-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/cerwin-roxas-67b436250/" target="_blank" class="soc-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="about-section">
+                        <span class="subtitle all-span"><i class="bi bi-envelope-fill"></i> 
+                        <a href="mailto:cerwinroxas17@gmail.com" class="all-span">cerwinroxas17@gmail.com</a></span>
+                        <p class="about-details all-span">
+                            Graduate of <strong class="all-span">Bachelor of Science in Computer Engineering.</strong>
+                            Service crew member for 6 months and
+                            Freelancer of <strong class="all-span">Excel Macro VBA</strong> and <strong class="all-span">WebDev</strong> 
+                            including Database using MySQL.
+                        </p>
+
+                        <a href="" class="all-span">Download CV</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="div2">
+            <div class="card" id="content-pages">
+                <div class="card-header" id="content-title">
+                    Welcome to CyyDev Portfolio!
+                </div>
+                <div class="card-body" id="content-home">
+                    <div class="main" id="Home">
+                        <div class="intro-wrapper">
+                            <p class="intro">
+                                console.log('Hello, I'm Cerwin');
+                                <span>
+                                    VHDL & WEB DEVELOPER <br> TECH. SUPPORT
+                                </span>
+                                &mdash; Bachelor of Science in Computer Engineering &mdash;
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-
-            <div class="contact-form" id="content-contact" style="display: none;">
-              <form id="contactForm">
-                  <div class="form-group">
-                    <label for="email">Email:</label>
-                      <input type="email" id="email" placeholder="example@gmail.com" autocomplete="off" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="fullName">Name:</label>
-                      <input type="text" id="fullName" placeholder="Full Name" autocomplete="off" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="subject">Purpose:</label>
-                      <input type="text" id="subject" placeholder="Subject" autocomplete="off" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="content">Message:</label>
-                      <textarea id="content" cols="30" rows="10" placeholder="Send me a message..." required></textarea>
-                  </div>
-                  <button type="submit" id="send">Send</button>
-              </form>
-            </div>
-
-
-            <div class="about-container" id="content-about" style="display: none;">
-              <div class="row">
-                <div class="col" id="col-shs">
-                  <div class="shs-col">
-                    <h3 class="abt">Education</h3>
-                    <div class="contents">
-                  
-                      <div class="box">
-                        <h5>2020 - 2024</h5>
-                        <h3>Tanauan City College | <span class="year">BSCPE</span></h3>
-                        <p>Tanauan City, Batangas</p>
-                      </div>
+                <div class="about-container" id="content-about" style="display: none;">
+                    <div class="row">
+                      <div class="col" id="col-shs">
+                        <div class="shs-col">
+                          <h3 class="abt">Education</h3>
+                          <div class="contents">
+                        
+                            <div class="box">
+                              <h5>2020 - 2024</h5>
+                              <h3>Tanauan City College | <span class="year">BSCPE</span></h3>
+                              <p>Tanauan City, Batangas</p>
+                            </div>
+                    
+                            <div class="box">
+                              <h5>2018 - 2022</h5>
+                              <h3>FAITH Fidelis Senior High School | <span class="year">STEM</span></h3>
+                              <p>Tanauan City, Batangas</p>
+                            </div>
+                          </div>
+                        </div>
               
-                      <div class="box">
-                        <h5>2018 - 2022</h5>
-                        <h3>FAITH Fidelis Senior High School | <span class="year">STEM</span></h3>
-                        <p>Tanauan City, Batangas</p>
-                      </div>
+                </div>
+              
+                <div class="col" id="col-exp">
+                  <div>
+                      <h3 class="abt">Experience</h3>
+                      <div class="contents"> 
+                            <div class="box">
+                                <h5>January 2024 - March 2024</h5>
+                                <h3>IT Intern | <span class="company">Torres Technology Center Corp.</span></h3>
+                                <p>Interacts with customers or clients to deliver service for both computer hardware and software. 
+                                    Offers recommendations to management for enhancing customer service and internal procedures. 
+                                    Gains proficiency in internal software systems. Also, helps to develop a system for an ease of access for 
+                                    inventory management.</p>
+                                </div>
+                    
+                                <div class="box">
+                                <h5>June 2023 - January 2024</h5>
+                                <h3>Service Crew | <span class="company">182 McDonald's</span></h3>
+                                <p>Responsibilities of our service crew team members include greeting and 
+                                    welcoming our guests, accurately taking and serving orders of our delicious world-famous food and beverages, and keeping our workspace and our guest service 
+                                    area neat and clean. I’ve been serving with discipline and gratefulness for 6 
+                                    months, and delivers happiness for our lovely customers.</p>
+                            </div>
+                        </div>
                     </div>
                   </div>
-        
-          </div>
-        
-          <div class="col" id="col-exp">
-            <div>
-                <h3 class="abt">Experience</h3>
-                <div class="contents">
-                    
-                  <div class="box">
-                    <h5>January 2024 - March 2024</h5>
-                    <h3>IT Intern | <span class="company">Torres Technology Center Corp.</span></h3>
-                    <p>Interacts with customers or clients to deliver service for both computer hardware and software. 
-                      Offers recommendations to management for enhancing customer service and internal procedures. 
-                      Gains proficiency in internal software systems. Also, helps to develop a system for an ease of access for 
-                      inventory management.</p>
-                  </div>
-        
-                  <div class="box">
-                    <h5>June 2023 - January 2024</h5>
-                    <h3>Service Crew | <span class="company">182 McDonald's</span></h3>
-                    <p>Responsibilities of our service crew team members include greeting and 
-                      welcoming our guests, accurately taking and serving orders of our delicious world-famous food and beverages, and keeping our workspace and our guest service 
-                      area neat and clean. I’ve been serving with discipline and gratefulness for 6 
-                      months, and delivers happiness for our lovely customers.</p>
-                  </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <!--Certificates page content-->
-          <div class="certificates" id="content-certificates">
-            <div class="row">
-                <div class="col"><img src="Certificates/Cerwin_Manzo_Roxas20240405-73-xqlvwu.jpg" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/ROXAS_WEB.png" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/Using MATLAB with Python_page-0001.jpg" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/WEB-CERT-ROXAS.png" alt="" class="cert-image"></div>
-            </div>
-            <div class="row">
-                <div class="col"><img src="Certificates/Attendees.png" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/Certificate of Participation (33).png" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/CERWIN_ROXAS.png" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/Cerwin R..png" alt="" class="cert-image"></div>
-            </div>
-            <div class="row">
-                <div class="col"><img src="Certificates/cerwinroxas17@gmail.com.JPG" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/E-CERT-ROXAS-CERWIN.jpg" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/ROXAS.JPG" alt="" class="cert-image"></div>
-                <div class="col"><img src="Certificates/so1.jpg" alt="" class="cert-image" id="special-cert"></div>
-            </div>
-        
-            <div id="certModal" class="certModal">
-                <span class="close-cert">&times;</span>
-                <img class="modal-content-cert" id="img-cert">
-                <div id="caption-cert"></div>
-            </div>
-        </div>
-
-        <div class="container-projects" id="content-projects" style="display: none;">
-          <div class="container">
-              <div class="row justify-content-around project-gallery" id="gallery">
-                <div class="col-4 project-item">
-                  <img src="image/project-img/predictNum.jpg" alt="">
-                  <h5>Predict A Number</h5>
-                  <p>A self-made project. A very simple logic program, generating a random number that must be guess by the user.</p>
-                  <button class="open-modal">Project Details</button>
-                  <div class="project-content">
-                      <h2>Predict A Number Game | <span class="madeBy">CyyDev</span></h2>
-                      <p><img src="image/project-img/predictNum.jpg" alt="">The "Predict A Number Game" is a simple 
-                        and fun game where you test your luck by guessing a number between 1 and 10. After entering 
-                        your guess, the game generates a random number within the same range. If your guess matches 
-                        the generated number, you earn a point; if not, the computer scores. The game keeps track of 
-                        both your score and the computer's score, displaying the results after each round. A 5-second 
-                        countdown timer follows each round, giving you a brief pause before the next guess. The game 
-                        features a user-friendly interface with built-in input validation, ensuring you always guess 
-                        within the correct range. It’s perfect for a quick mental exercise or a friendly challenge. 
-                        See how many points you can rack up and outscore the computer! Give it a try 
-                        <a href="https://numpredictiongame.netlify.app/" target="_blank">here.</a></p>
-                  </div>
+                </div>
               </div>
 
-                  <div class="col-4 project-item">
-                      <img src="image/project-img/Thesis-MVM.jpg" alt="" class="open-modal">
-                      <div class="project-content">
-                          <h2>Medicine Vending Machine with Clinic Verification System using OTP | <span class="madeBy">Thesis</span></h2>
-                          <!-- <span><iframe src="https://www.youtube.com/embed/QTPCwMbxkiE" frameborder="0" allowfullscreen></iframe> -->
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-                  </div>
-
-                  <div class="col-4 project-item">
-                      <img src="image/project-img/invmgmt.png" alt="" class="open-modal">
-                      <div class="project-content">
-                          <h2>Inventory Management | <span class="madeBy">Internship</span></h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      </div>
-                  </div>
+              <div class="contact-form" id="content-contact" style="display: none;">
+                <form id="contactForm">
+                    <div class="form-group">
+                      <label for="email" id="label-form">Email:</label>
+                        <input type="email" id="email" placeholder="example@gmail.com" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="fullName" id="label-form">Name:</label>
+                        <input type="text" id="fullName" placeholder="Full Name" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="subject" id="label-form">Purpose:</label>
+                        <input type="text" id="subject" placeholder="Subject" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="content" id="label-form">Message:</label>
+                        <textarea id="content" cols="30" rows="10" placeholder="Send me a message..." required></textarea>
+                    </div>
+                    <button type="submit" id="send">Send</button>
+                </form>
               </div>
-          </div>
-      </div>
+
+              <div class="certificates" id="content-certificates">
+                <div class="row">
+                    <div class="col"><img src="Certificates/Cerwin_Manzo_Roxas20240405-73-xqlvwu.jpg" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/ROXAS_WEB.png" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/Using MATLAB with Python_page-0001.jpg" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/WEB-CERT-ROXAS.png" alt="" class="cert-image"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><img src="Certificates/Attendees.png" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/Certificate of Participation (33).png" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/CERWIN_ROXAS.png" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/Cerwin R..png" alt="" class="cert-image"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><img src="Certificates/cerwinroxas17@gmail.com.JPG" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/E-CERT-ROXAS-CERWIN.jpg" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/ROXAS.JPG" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/so1.jpg" alt="" class="cert-image" id="special-cert"></div>
+                </div>
+            
+                <div id="certModal" class="certModal">
+                    <span class="close-cert">&times;</span>
+                    <img class="modal-content-cert" id="img-cert">
+                    <div id="caption-cert"></div>
+                </div>
+            </div>
+
+            <div class="container-projects" id="content-projects" style="display: none;">
+                <div class="container">
+                    <div class="row justify-content-around project-gallery" id="gallery">
+                      <div class="col-4 project-item">
+                        <img src="image/project-img/predictNum.jpg" alt="">
+                        <h5>Predict A Number</h5>
+                        <p>A self-made project. A very simple logic program, generating a random number that must be guess by the user.</p>
+                        <button class="open-modal">Project Details</button>
+                        <div class="project-content">
+                            <h2>Predict A Number Game | <span class="madeBy">CyyDev</span></h2>
+                            <p><img src="image/project-img/predictNum.jpg" alt="">The "Predict A Number Game" is a simple 
+                              and fun game where you test your luck by guessing a number between 1 and 10. After entering 
+                              your guess, the game generates a random number within the same range. If your guess matches 
+                              the generated number, you earn a point; if not, the computer scores. The game keeps track of 
+                              both your score and the computer's score, displaying the results after each round. A 5-second 
+                              countdown timer follows each round, giving you a brief pause before the next guess. The game 
+                              features a user-friendly interface with built-in input validation, ensuring you always guess 
+                              within the correct range. It’s perfect for a quick mental exercise or a friendly challenge. 
+                              See how many points you can rack up and outscore the computer! Give it a try 
+                              <a href="https://numpredictiongame.netlify.app/" target="_blank">here.</a></p>
+                        </div>
+                    </div>
       
-      <!-- Modal Structure for Project -->
-      <div id="customModal" class="custom-modal">
-          <span class="close-modal">&times;</span>
-          <div class="modal-content-container">
-              <!-- Content will be injected here dynamically -->
-          </div>
-      </div>
+                    <div class="col-4 project-item">
+                        <img src="image/project-img/Thesis-MVM.jpg" alt="">
+                        <h5>Cloud-Based MVM</h5>
+                        <p>Thesis Project develop by our Group. I am responsible for WebApp Development inclduing frontent, backend and database.</p>
+                        <button class="open-modal">Project Details</button>
+                        <div class="project-content">
+                            <h2>Cloud-Based Medicine Vending Machine with Clinic Verification System using OTP | <span class="madeBy">Thesis</span></h2>
+                            <span><iframe src="videos/Thesis-dev.mp4" frameborder="0" allowfullscreen></iframe>
+                                <p> Cloud-Based Medicine Vending Machine
+                                    with Clinic Verification System Using One-Time PIN (OTP) so that the students
+                                    of Tanauan City College can have ease of access in getting over-the-counter
+                                    medicines. <br><em>Other details to be attach soon.</em></p>
+                        </div>
+                    </div>
 
-          </div>
+                    <div class="col-4 project-item">
+                        <img src="image/project-img/invmgmt.png" alt="">
+                        <h5>Torres Tech. Inventory Management</h5>
+                        <p>An internship project for the team of tech support. My Responsibilities are mostly the backend and database development.</p>
+                        <button class="open-modal">Project Details</button>
+                        <div class="project-content">
+                            <h2>Inventory Management | <span class="madeBy">Internship</span></h2>
+                            <span><iframe src="videos/Thesis-dev.mp4" frameborder="0" allowfullscreen></iframe>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br><em>Details are being compiled and will attach soon.</em></p>
+                        </div>
+                    </div>
+      
+                    </div>
+                </div>
+            </div>
+
+            <div id="customModal" class="custom-modal">
+                <span class="close-modal">&times;</span>
+                <div class="modal-content-container">
+                </div>
+            </div>
+
+            </div>
         </div>
     </div>
-  </main>
-
-  <div id="notification" class="notification" style="display: none;">
-    <p>Note: This site is still under development for Tablet size devices<br> and other functionalities including projects. Thank you!</p>
-    <button id="okay-button">Okay</button>
-  </div>
-
-  <div id="myModal3" class="modal3">
-    <div class="modal-content3">
-        <span class="close3">&times;</span>
-        <p id="modalMessage"></p>
-    </div>
-  </div>
+<!-- 
+    <div id="notification" class="notification" style="display: none;">
+        <p>Note: This site is still under development for Tablet size devices<br> and other functionalities including projects. Thank you!</p>
+        <button id="okay-button">Okay</button>
+      </div> -->
+    
+      <div id="myModal3" class="modal3">
+        <div class="modal-content3">
+            <span class="close3">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+      </div>
 
 </body>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-  <script src="scripts/about.js"></script>
-  <script src="scripts/script.js"></script>
-  <script src="scripts/contact.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/modal&mode/certmodal.js"></script>
+<script src="scripts/modal&mode/projectModal.js"></script>
+<script src="scripts/contactScript/contact.js"></script>
+<script src="scripts/modal&mode/Theme/changeTheme.js"></script>
 
 </html>
