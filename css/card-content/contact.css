@@ -16,6 +16,8 @@
 label {
   align-self: flex-start; 
   color: #fff;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 #email,
@@ -35,11 +37,12 @@ textarea {
   width: 20%;
   padding: 10px;
   font-size: 16px;
-  background-color: #111;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 10px;
   margin-bottom: 1rem;
 }
 
@@ -126,5 +129,9 @@ textarea {
   #send:hover {
       color: #fff;
       background-color: #202020;
+  }
+
+  label {
+    margin-left: 0;
   }
 }

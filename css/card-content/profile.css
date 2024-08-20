@@ -42,12 +42,16 @@
 }
 
 .soc-icons .soc-icon {
-    color: #fff;
+    color: #8a8a8a;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
 .soc-icons .soc-icon:hover {
+    color: #fff;
+}
+
+.dark .soc-icons .soc-icon:hover {
     color: #000;
 }
 

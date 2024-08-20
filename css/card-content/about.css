@@ -12,8 +12,9 @@
 	font-family: helvetica;
 	color: #b2b6b6;
 	padding: 0px 0px 20px 30px;
-
+	text-align: center;
     font-weight: bold;
+	margin-right: 3rem;
 }
 .col .contents{
 	padding: 0px 30px;
@@ -47,7 +48,7 @@
 	position: relative;
 	color: #111;
     margin-right: 20px;
-  margin-left: 20px;
+  	margin-left: 20px;
 }
 .box h3{
 	font-size: 19px;
