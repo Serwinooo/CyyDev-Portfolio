@@ -68,7 +68,7 @@ The JavaScript functions used for navigating between sections:
 - `certPage()`: Displays the Certificates section.
 - `projectPage()`: Displays the Projects section.
 
-### Example JavaScript Snippet
+### Technologies Used
 
 -   HTML5
 -   CSS3
