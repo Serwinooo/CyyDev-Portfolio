@@ -73,3 +73,9 @@
     text-align: justify;
     margin-top: 10px;
 }
+
+@media (max-width: 700px) {
+	br{
+        display: block;
+    }
+}
