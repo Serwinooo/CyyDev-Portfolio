@@ -12,6 +12,7 @@ const projectItem = document.querySelectorAll('.project-item');
 const projectPar = document.querySelectorAll('.project-item p');
 const labelForm = document.querySelectorAll('#label-form');
 const projContP =  document.querySelectorAll('.project-content p');
+const verifiedLogo = document.querySelector('.bi-check-circle-fill');
 
 function changeMode() {
     if (checkbox.checked) {
@@ -56,6 +57,7 @@ function changeMode() {
         cardHeader.style.color = '#fff';
         navbarNav.style.background = '#fff';
         cardContent.style.color = '#000';
+        verifiedLogo.style.color = 'rgb(36, 36, 253)';
 
 
     } else {
@@ -101,6 +103,7 @@ function changeMode() {
         cardHeader.style.color = '';
         navbarNav.style.background = '';
         cardContent.style.color = '';
+        verifiedLogo.style.color = '';
     }
 }
 
