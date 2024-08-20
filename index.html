@@ -66,7 +66,7 @@
     <div class="parent">
         <div class="div1">
             <div class="card">
-                <img src="image/avatar.webp" alt="Cerwin Roxas" class="card-img">
+                <img src="image/avatar.webp" alt="Cerwin Roxas" class="card-img" loading="lazy">
                 <div class="card-content">
                     <span class="name all-span">Cerwin Roxas <i class="bi bi-check-circle-fill"></i></span> <br>
                     <span class="description all-span">Web Dev | BSCPE</span>
@@ -185,22 +185,22 @@
 
               <div class="certificates" id="content-certificates">
                 <div class="row">
-                    <div class="col"><img src="Certificates/Cerwin_Manzo_Roxas20240405-73-xqlvwu.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/ROXAS_WEB.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/using-matlab-with-python-page-0001-66c3551d5dec3.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/WEB-CERT-ROXAS.webp" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/Cerwin_Manzo_Roxas20240405-73-xqlvwu.webp" alt="cert1" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/ROXAS_WEB.webp" alt="cert2" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/using-matlab-with-python-page-0001-66c3551d5dec3.webp" alt="cert3" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/WEB-CERT-ROXAS.webp" alt="cert4" loading="lazy" class="cert-image"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img src="Certificates/Attendees.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/Certificate of Participation (33).webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/CERWIN_ROXAS.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/Cerwin R.webp" alt="" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/Attendees.webp" alt="cert5" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/Certificate of Participation (33).webp" alt="cert6" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/CERWIN_ROXAS.webp" alt="cert7" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/Cerwin R.webp" alt="cert8" loading="lazy" class="cert-image"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img src="Certificates/cerwinroxas17@gmail.com.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/e-cert-roxas-cerwin-66c3549b1c84c.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/ROXAS.webp" alt="" class="cert-image"></div>
-                    <div class="col"><img src="Certificates/so1.webp" alt="" class="cert-image" id="special-cert"></div>
+                    <div class="col"><img src="Certificates/cerwinroxas17@gmail.com.webp" alt="cert9" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/e-cert-roxas-cerwin-66c3549b1c84c.webp" alt="cert10" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/ROXAS.webp" alt="cert11" loading="lazy" class="cert-image"></div>
+                    <div class="col"><img src="Certificates/so1.webp" alt="cert12" loading="lazy" class="cert-image" id="special-cert"></div>
                 </div>
             
                 <div id="certModal" class="certModal">
@@ -214,48 +214,59 @@
                 <div class="container">
                     <div class="row justify-content-around project-gallery" id="gallery">
                       <div class="col-4 project-item">
-                        <img src="image/project-img/predictNum.webp" alt="">
+                        <picture>
+                            <source srcset="image/project-img/predictNum.webp" type="image/webp">
+                            <img src="image/project-img/predictNum.jpg" alt="project-thumbnail" loading="lazy">
+                        </picture>
                         <h5>Predict A Number</h5>
-                        <p>A self-made project. A very simple logic program, generating a random number that must be guess by the user.</p>
+                        <p>A self-made project. A very simple logic program, generating a random number that must be guessed by the user.</p>
                         <button class="open-modal">Project Details</button>
                         <div class="project-content">
                             <h2>Predict A Number Game | <span class="madeBy">CyyDev</span></h2>
-                            <p><img src="image/project-img/predictNum.jpg" alt="">The "Predict A Number Game" is a simple 
-                              and fun game where you test your luck by guessing a number between 1 and 10. After entering 
-                              your guess, the game generates a random number within the same range. If your guess matches 
-                              the generated number, you earn a point; if not, the computer scores. The game keeps track of 
-                              both your score and the computer's score, displaying the results after each round. A 5-second 
-                              countdown timer follows each round, giving you a brief pause before the next guess. The game 
-                              features a user-friendly interface with built-in input validation, ensuring you always guess 
-                              within the correct range. It’s perfect for a quick mental exercise or a friendly challenge. 
-                              See how many points you can rack up and outscore the computer! Give it a try 
-                              <a href="https://numpredictiongame.netlify.app/" target="_blank">here.</a></p>
+                            <p><picture>
+                                <source srcset="image/project-img/predictNum.webp" type="image/webp">
+                                <img src="image/project-img/predictNum.jpg" alt="predictNumGame">
+                            </picture>
+                                The "Predict A Number Game" is a simple 
+                                and fun game where you test your luck by guessing a number between 1 and 10. After entering 
+                                your guess, the game generates a random number within the same range. If your guess matches 
+                                the generated number, you earn a point; if not, the computer scores. The game keeps track of 
+                                both your score and the computer's score, displaying the results after each round. A 5-second 
+                                countdown timer follows each round, giving you a brief pause before the next guess. The game 
+                                features a user-friendly interface with built-in input validation, ensuring you always guess 
+                                within the correct range. It’s perfect for a quick mental exercise or a friendly challenge. 
+                                See how many points you can rack up and outscore the computer! Give it a try 
+                                <a href="https://numpredictiongame.netlify.app/" target="_blank">here.</a></p>
                         </div>
                     </div>
-      
+        
                     <div class="col-4 project-item">
-                        <img src="image/project-img/Thesis-MVM.webp" alt="">
+                        <picture>
+                            <source srcset="image/project-img/Thesis-MVM.webp" type="image/webp">
+                            <img src="image/project-img/Thesis-MVM.jpg" alt="project-thumbnail" loading="lazy">
+                        </picture>
                         <h5>Cloud-Based MVM</h5>
-                        <p>Thesis Project develop by our Group. I am responsible for WebApp Development inclduing frontent, backend and database.</p>
+                        <p>Thesis Project developed by our Group. I am responsible for WebApp Development including frontend, backend, and database.</p>
                         <button class="open-modal">Project Details</button>
                         <div class="project-content">
                             <h2>Cloud-Based Medicine Vending Machine with Clinic Verification System using OTP | <span class="madeBy">Thesis</span></h2>
-                            <span><iframe src="videos/Thesis-dev.mp4" frameborder="0" allowfullscreen></iframe>
-                                <p> Cloud-Based Medicine Vending Machine
-                                    with Clinic Verification System Using One-Time PIN (OTP) so that the students
-                                    of Tanauan City College can have ease of access in getting over-the-counter
-                                    medicines. <br><em>Other details to be attach soon.</em></p>
+                            <span><iframe src="videos/Thesis-dev.mp4" preload="none" frameborder="0" allowfullscreen></iframe>
+                                <p> Cloud-Based Medicine Vending Machine with Clinic Verification System...</p>
                         </div>
                     </div>
-
+        
                     <div class="col-4 project-item">
-                        <img src="image/project-img/invmgmt.webp" alt="">
+                        <picture>
+                            <source srcset="image/project-img/invmgmt.webp" type="image/webp">
+                            <img src="image/project-img/invmgmt.jpg" alt="project-thumbnail" loading="lazy">
+                        </picture>
+        
                         <h5>Torres Tech. Inventory Management</h5>
                         <p>An internship project for the team of tech support. My Responsibilities are mostly the backend and database development.</p>
                         <button class="open-modal">Project Details</button>
                         <div class="project-content">
                             <h2>Inventory Management | <span class="madeBy">Internship</span></h2>
-                            <span><iframe src="videos/Thesis-dev.mp4" frameborder="0" allowfullscreen></iframe>
+                            <span><iframe src="videos/Thesis-dev.mp4" preload="none" frameborder="0" allowfullscreen></iframe>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 

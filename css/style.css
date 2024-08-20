@@ -1,16 +1,23 @@
-/* General Body Styling */
+@font-face {
+    font-family: 'YourFont';
+    src: url('yourfont.woff2') format('woff2');
+    font-display: swap;
+  }
+  
+
 body {
     background: #000;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
+    font-display: swap;
 }
 
 /* Header and Navbar Styling */
 header {
     padding: 0;
     width: 100%; 
-    position: fixed; /* Keep header fixed at the top */
-    top: 0; /* Align to the top */
-    z-index: 1000; /* Ensure it stays above other content */
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
 }
 
 .container-fluid{
@@ -29,12 +36,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8); /* Ensure it has a background */
+    background-color: rgba(0, 0, 0, 0.8); 
 }
 
-/* Light Mode Toggle Switch Styling */
 .lightMode {
-    margin-left: auto; /* Pushes the light mode switch to the right */
+    margin-left: auto; 
     display: flex;
     align-items: center;
 }
@@ -81,26 +87,25 @@ nav span, nav button {
     color: #000;
 }
 
-/* Default hamburger icon color (light mode) */
+
 .navbar-toggler-icon {
-    background-color: #000; /* or use an SVG color */
+    background-color: #000; 
 }
 
-/* Dark mode hamburger icon color */
 .dark .navbar-toggler-icon {
-    background-color: #000; /* Change to desired dark mode color */
+    background-color: #000; 
     border-radius: 5px;
 }
 
-/* Flexbox layout for the parent div */
+
 .parent {
     display: flex;
-    justify-content: center; /* Center both cards horizontally */
-    align-items: center; /* Center both cards vertically */
-    gap: 2rem; /* Add space between the cards */
-    margin-top: 100px; /* Add margin to push content below the fixed header */
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem; 
+    margin-top: 100px;
     padding: 20px;
-    min-height: 80vh; /* Allow the parent container to grow if necessary */
+    min-height: 80vh; 
 }
 
 /* Card Section */
@@ -113,13 +118,13 @@ nav span, nav button {
 }
 
 .div1 {
-    flex: 1; /* The left card takes 1 part of the available space */
-    max-width: 300px; /* Adjust the maximum width of the profile card */
+    flex: 1; 
+    max-width: 300px; 
     animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
 }
 
 .div2 {
-    flex: 2; /* The right card takes 2 parts of the available space, making it wider */
+    flex: 2; 
     animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
 }
 
@@ -147,36 +152,34 @@ nav span, nav button {
     }
 }
 
-
-/* Ensure both cards have equal height */
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    box-shadow: none; /* Remove hover-related shadow */
+    box-shadow: none; 
 }
 
 .card-content, .card-body {
-    flex-grow: 1; /* Ensures content grows to fill the card */
+    flex-grow: 1; 
 }
 
 /* Media query for smaller screens */
 @media (max-width: 767px) {
     .parent {
         flex-direction: column;
-        align-items: stretch; /* Ensure the children take up the full width */
-        height: auto; /* Allow the parent to grow based on its content */
+        align-items: stretch; 
+        height: auto; 
     }
 
     .div1, .div2 {
-        width: 100%; /* Make both divs take up the full width */
-        max-width: none; /* Reset any max-width if applied */
-        margin-bottom: 20px; /* Add some space between the divs */
+        width: 100%;
+        max-width: none; 
+        margin-bottom: 20px; 
     }
 
     .div2 {
-        margin-bottom: 0; /* Remove bottom margin from last div */
+        margin-bottom: 0; 
     }
 }
