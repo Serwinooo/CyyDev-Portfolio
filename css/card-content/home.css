@@ -46,7 +46,7 @@
 
 #Home {
     background-color: #111;
-    border-radius: 5px;
+    border-radius: 10px 10px 0 0;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -60,12 +60,13 @@
     background: #00000095;
     margin-right: 1rem;
     z-index: 44;
+    border-radius: 0 0 10px 10px;
 }
 
 .marquee-content {
     display: inline-block;
     padding-left: 100%;
-    animation: marquee 15s linear infinite;
+    animation: marquee 10s linear infinite;
     color: #fff;
     font-size: 2em;
     z-index: 999;
@@ -81,7 +82,7 @@
 }
 
 .dark .marquee {
-    background: none;
+    background: #111;
 }
 
 .dark .marquee-content {
