@@ -50,3 +50,69 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.marquee {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: #00000095;
+    margin-right: 1rem;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    color: #fff;
+    font-size: 2em;
+}
+
+.marquee-content i{
+    margin-left: 4rem;
+}
+
+.marquee-content:hover{
+    animation-play-state: paused;
+}
+
+.dark .marquee {
+    background: none;
+}
+
+.dark .marquee-content {
+    color: #000;
+}
+
+.marquee-content i:nth-child(1) {
+    color: #E34F26; /* HTML5 icon color */
+}
+
+.marquee-content i:nth-child(2) {
+    color: #1572B6; /* CSS3 icon color */
+}
+
+.marquee-content i:nth-child(3) {
+    color: #F7DF1E; /* JavaScript icon color */
+}
+
+.marquee-content i:nth-child(4) {
+    color: #777BB4; /* PHP icon color */
+}
+
+.marquee-content i:nth-child(5) {
+    color: #F05032; /* Git icon color */
+}
+
+.marquee-content i:nth-child(6) {
+    color: #181717; /* GitHub icon color */
+}
+
+.marquee-content i:nth-child(7) {
+    color: #FFD107; /* Database icon color */
+}
+
+.marquee-content i:nth-child(8) {
+    color: #61DAFB; /* React icon color */
+}
