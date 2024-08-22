@@ -68,11 +68,12 @@
     animation: marquee 15s linear infinite;
     color: #fff;
     font-size: 2em;
-    z-index: 55;
+    z-index: 999;
 }
 
 .marquee-content i{
     margin-left: 4rem;
+    z-index: 999;
 }
 
 .marquee-content:hover{
