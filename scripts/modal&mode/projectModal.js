@@ -7,11 +7,17 @@ var triggers = document.querySelectorAll('.open-modal');
 // Get the close button
 var closeBtn = document.querySelector('.close-modal');
 
+var projectMade = document.querySelectorAll('.project-content');
+
 // When an image is clicked, show the modal with corresponding content
 triggers.forEach(function(trigger) {
     trigger.addEventListener('click', function() {
         // Get the project content related to the clicked image
-        var projectContent = this.nextElementSibling.innerHTML;
+for (let i = 0; i < projectMade.length; i++){
+
+    var projectContent = projectMade[i].innerHTML;
+
+}
         
         // Inject the project content into the modal's content container
         customModal.querySelector('.modal-content-container').innerHTML = projectContent;

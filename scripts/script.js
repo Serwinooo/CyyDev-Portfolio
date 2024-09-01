@@ -63,7 +63,8 @@ const certPage = () => {
 
 const projectPage = () => {
     hideAllSections();
-    contentProjects.style.display = 'block';
+    contentProjects.style.display = 'flex';
+    contentProjects.style.flexDirection = 'wrap';
     contentTitle.innerHTML = 'Project Experience';
    
     for (let i = 0; cardsContent.length; i++){

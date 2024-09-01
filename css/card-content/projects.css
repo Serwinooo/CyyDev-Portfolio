@@ -1,0 +1,58 @@
+.container-projects {
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 1rem 0rem 1rem 0;
+}
+.project-content{
+    display: none;
+}
+.project {
+    background: #ffffff29;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+picture source, img{
+    width: 100%;
+
+}
+.project h2 {
+    margin-top: 0;
+    color: #000000;
+}
+.project p {
+    color: #000000;
+}
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.language {
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 0.8em;
+}
+.open-modal{
+    background-color: rgb(104, 104, 233);
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    max-width: 100%;
+    padding: .1em auto;
+}
+.language.python { background-color: #3572A5; }
+.language.javascript { background-color: #f1e05a; color: #333; }
+.language.html { background-color: #e34c26; }
+.language.css { background-color: #563d7c; }
+.language.php { background-color: #777BB3; }
+.language.bootstrap { background-color: #6610f2; }
+.language.mysql { background-color: #f7965a; color: #333; }
