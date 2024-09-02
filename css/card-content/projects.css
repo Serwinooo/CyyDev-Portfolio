@@ -8,6 +8,7 @@
 .project-content{
     display: none;
 }
+
 .project {
     background: #ffffff29;
     border: 1px solid #ddd;
@@ -27,6 +28,7 @@ picture source, img{
 }
 .project p {
     color: #000000;
+    text-align: justify;
 }
 .languages {
     display: flex;
@@ -35,7 +37,7 @@ picture source, img{
     margin-top: 15px;
 }
 .language {
-    padding: 5px 10px;
+    padding: 4px 10px;
     border-radius: 15px;
     color: white;
     font-size: 0.8em;

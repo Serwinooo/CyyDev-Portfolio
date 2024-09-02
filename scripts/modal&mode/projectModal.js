@@ -1,25 +1,19 @@
 // Get the modal
 var customModal = document.getElementById("customModal");
 
-// Get the images that trigger the modal
+// Get the buttons that trigger the modal
 var triggers = document.querySelectorAll('.open-modal');
 
 // Get the close button
 var closeBtn = document.querySelector('.close-modal');
 
-var projectMade = document.querySelectorAll('.project-content');
-
-// When an image is clicked, show the modal with corresponding content
-triggers.forEach(function(trigger) {
+// When a trigger is clicked, show the modal with corresponding content
+triggers.forEach(function(trigger, index) {
     trigger.addEventListener('click', function() {
-        // Get the project content related to the clicked image
-for (let i = 0; i < projectMade.length; i++){
-
-    var projectContent = projectMade[i].innerHTML;
-
-}
+        // Get the project content related to the clicked trigger
+        var projectContent = document.querySelectorAll('.project-content')[index].innerHTML;
         
-        // Inject the project content into the modal's content container
+        // Set the modal content
         customModal.querySelector('.modal-content-container').innerHTML = projectContent;
         
         // Display the modal
@@ -27,14 +21,16 @@ for (let i = 0; i < projectMade.length; i++){
     });
 });
 
-// When the close button is clicked, hide the modal
+// Close the modal when the close button is clicked
 closeBtn.addEventListener('click', function() {
     customModal.style.display = "none";
 });
 
-// Close the modal if the user clicks outside the modal content
+// Close the modal when clicking outside of it
 window.addEventListener('click', function(event) {
+    
     if (event.target == customModal) {
         customModal.style.display = "none";
+
     }
 });
