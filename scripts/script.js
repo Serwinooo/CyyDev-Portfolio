@@ -5,6 +5,8 @@ const contentContact = document.querySelector('#content-contact');
 const contentCertificates = document.querySelector('#content-certificates');
 const contentProjects = document.querySelector('#content-projects');
 const cardsContent = document.querySelectorAll('.card');
+const projectOptions = document.getElementById('project-options');
+const containerProject = document.getElementById('projectContainer');
 
 const hideAllSections = () => {
     contentHome.style.display = 'none';
@@ -12,6 +14,8 @@ const hideAllSections = () => {
     contentContact.style.display = 'none';
     contentCertificates.style.display = 'none';
     contentProjects.style.display = 'none';
+    projectOptions.style.display ='none';
+    projectContainer.style.display = 'none';
 };
 
 const applyAnimation = (element) => {
@@ -66,6 +70,7 @@ const projectPage = () => {
     contentProjects.style.display = 'flex';
     contentProjects.style.flexDirection = 'wrap';
     contentTitle.innerHTML = 'Project Experience';
+    projectOptions.style.display ='block';
    
     for (let i = 0; cardsContent.length; i++){
         applyAnimation(cardsContent[i]);

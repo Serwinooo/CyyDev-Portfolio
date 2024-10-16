@@ -9,6 +9,14 @@
     display: none;
 }
 
+#projectContainer {
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 1rem 0rem 1rem 0;
+}
+
 .project {
     background: #ffffff29;
     border: 1px solid #ddd;
@@ -17,6 +25,8 @@
     width: 300px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    cursor: default;
+    display: none;
 }
 picture source, img{
     width: 100%;
